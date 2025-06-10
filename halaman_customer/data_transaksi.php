@@ -203,7 +203,7 @@ if (!isset($_SESSION['loggedInCustId'])) {
                                 <td>";
                                 
                             if ($row['status'] == 'Diproses') {
-                                echo '<a href="https://api.whatsapp.com/send?phone=62895601342260&text=Halo,%20saya%20' . urlencode($nama_customer) . '%20ingin%20mengonfirmasi%20pesanan%20berikut%20yang%20berstatus%20di%20proses:%0A%0ATanggal%20Pesan:%20' . $row['tgl_pesan'] . '%0ANama%20Barang:%20' . $row['nama_barang'] . '%0AUkuran:%20' . $row['nama_ukuran'] . '%0AWarna:%20' . $row['warna'] . '%0AJumlah:%20' . $row['jumlah'] . '%0ATotal%20Harga:%20' . $total_harga . '%0AStatus:%20' . $row['status'] . '" target="_blank" class="btn btn-success">
+                                echo '<a href="https://api.whatsapp.com/send?phone=(replace this with your whatsapp number)&text=Halo,%20saya%20' . urlencode($nama_customer) . '%20ingin%20mengonfirmasi%20pesanan%20berikut%20yang%20berstatus%20di%20proses:%0A%0ATanggal%20Pesan:%20' . $row['tgl_pesan'] . '%0ANama%20Barang:%20' . $row['nama_barang'] . '%0AUkuran:%20' . $row['nama_ukuran'] . '%0AWarna:%20' . $row['warna'] . '%0AJumlah:%20' . $row['jumlah'] . '%0ATotal%20Harga:%20' . $total_harga . '%0AStatus:%20' . $row['status'] . '" target="_blank" class="btn btn-success">
                                         <i class="fab fa-whatsapp"></i> Konfirmasi via WhatsApp
                                     </a>';
                             } else {
