@@ -34,6 +34,16 @@ Follow these steps to set up and run Selva House E-commerce on your local machin
     * Start your Apache and MySQL modules in XAMPP.
     * Open your web browser and go to `http://localhost/Selva-House-E-Commerce/halaman/Login.php` to access the website.
 
+## ⚠️ Important Note: WhatsApp Confirmation Feature
+
+To fully enable the "Confirm via WhatsApp" feature, you'll need to **replace the placeholder phone number** in the PHP code with your **active WhatsApp number**.
+
+Find the following code snippet in `page_customer\data_transaction.php` :
+
+```php
+ echo '<a href="https://api.whatsapp.com/send?phone=(replace this with your whatsapp number)&text=Halo,%20saya%20'
+```
+
 ## 📸 Feature Gallery
 
 ### Login
