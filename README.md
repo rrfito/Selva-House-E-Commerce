@@ -26,6 +26,7 @@ Follow these steps to set up and run Selva House E-commerce on your local machin
     * Open your web browser and go to `http://localhost/phpmyadmin`.
     * Create a new database named `database`.
     * Import the `database.sql` file (located in your project root) into the newly created database.
+    * **Note:** Some tables in the provided `database.sql` might contain **empty or placeholder data** for certain sensitive fields. You can populate the necessary data either through the **Admin Panel** of the website or directly via **phpMyAdmin**.
 4.  **Configure Database Connection:**
     * Navigate to `controller/koneksi.php` (or similar path depending on your project structure) within your project folder.
     * if you want to update the database credentials (username, password, database name) to match your local MySQL setup.
